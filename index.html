@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-sounds</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header class="header-block">
+        <div class="container header-container">
+            <div class="logo active" data-name="forest"></div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list-item" data-name="solovey">Соловей</li>
+                    <li class="nav-list-item" data-name="drozd">Дрозд</li>
+                    <li class="nav-list-item" data-name="malinovka">Малиновка</li>
+                    <li class="nav-list-item" data-name="javoronok">Жаворонок</li>
+                    <li class="nav-list-item" data-name="slavka">Славка</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-block">
+        <div class="bird-photo"></div>
+        <div class="bird-info">
+            <p class="bird-info-text"></p>
+        </div>
+        <audio class="audio" src="./assets/audio/forest.mp3"></audio>
+        <button class="play-button"></button>
+    </main>
+    <footer class="footer-block">
+        <div class="container footer-container">
+            <ul class="footer-copyright">
+                <li class="footer-copyright-item">©</li>
+                <li class="footer-copyright-item">2022</li>
+                <li class="footer-copyright-item"><a class="footer-copyright-item-link" href="https://github.com/pechavvp" target="_blank">github</a></li>
+            </ul>
+            <a class="footer-school-link" href="https://rs.school/js-stage0" target="_blank"><img src="./assets/svg/rss.svg" alt="RS School"></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

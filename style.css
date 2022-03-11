@@ -1,0 +1,169 @@
+* {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.header-block, .footer-block {
+    min-width: 750px;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.header-container, .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url(./assets/svg/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    filter: invert(21%) sepia(10%) saturate(949%) hue-rotate(7deg) brightness(88%) contrast(88%);
+}
+
+.logo.active {
+    filter: invert(21%) sepia(10%) saturate(949%) hue-rotate(7deg) brightness(88%) contrast(88%);
+}
+
+.logo.active:hover {
+    filter: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+.nav-list-item {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-list-item:hover, .footer-copyright-item-link:hover {
+    color: #bdae82;
+}
+
+.nav-list-item.active {
+    color: #bdae82;
+}
+
+.nav-list-item.active:hover {
+    color: #dbc47d;
+}
+
+.main-block {
+    display: block;
+    position: relative;
+    height: calc(100vh - 120px);
+    min-height: 440px;
+    min-width: 750px;
+    background-image: url(./assets/img/forest.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bird-photo {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    top: calc(50% - 200px);
+    left: calc(25% - 180px);
+    border-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bird-info {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    top: calc(50% - 200px);
+    right: calc(25% - 180px);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bird-info-text {
+    font-size: 14px;
+    padding: 14px;
+    background-color: transparent;
+}
+
+.bird-photo.active, .bird-info.active {
+    display: block;
+}
+
+.play-button {
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    border: 0;
+    background-image: url(./assets/svg/play.svg);
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.play-button:hover {
+    filter: contrast(80%);
+}
+
+.pause {
+    background-image: url(./assets/svg/pause.svg);
+}
+
+.footer-copyright {
+    display: flex;
+    padding: 0;
+    gap: 20px;
+}
+
+.footer-copyright-item {
+    list-style: none;
+}
+
+.footer-copyright-item-link {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-school-link > img {
+    height: 50px;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.footer-school-link > img:hover {
+    filter: invert(21%) sepia(10%) saturate(949%) hue-rotate(7deg) brightness(88%) contrast(88%);
+}
